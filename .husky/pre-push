@@ -1,0 +1,3 @@
+npm test:staged
+standard --fix
+git add

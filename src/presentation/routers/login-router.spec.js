@@ -1,5 +1,5 @@
 class LoginRouter {
-  route(httpRequest) {
+  route (httpRequest) {
     if (!httpRequest || !httpRequest.body) {
       return HttpResponse.serverError()
     }
@@ -13,20 +13,21 @@ class LoginRouter {
   }
 }
 class HttpResponse {
-  static badRequest(paramName) {
+  static badRequest (paramName) {
     return {
       statusCode: 400,
       body: new MissingParamError(paramName)
     }
   }
-  static serverError() {
+
+  static serverError () {
     return {
       statusCode: 500
     }
   }
 }
 class MissingParamError extends Error {
-  constructor(paramName) {
+  constructor (paramName) {
     super(`Missing param: ${paramName}`)
     this.name = 'MissingParamError'
   }

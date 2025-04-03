@@ -4,7 +4,7 @@ const UnauthorizedError = require('../helpers/unauthorized-error')
 
 const makeSut = () => {
   class AuthUseCaseSpy {
-    auth(email, password) {
+    auth (email, password) {
       this.email = email
       this.password = password
     }
@@ -80,7 +80,6 @@ describe('Login Router', () => {
     expect(httpResponse.body).toEqual(new UnauthorizedError())
   })
 })
-
 
 test('Should return 500 if no AuthUseCase is provided', () => {
   const sut = new LoginRouter()

@@ -15,7 +15,7 @@ const makeSut = () => {
 
 const makeAuthUseCase = () => {
   class AuthUseCaseSpy {
-    auth(email, password) {
+    auth (email, password) {
       this.email = email
       this.password = password
       return this.accessToken
@@ -26,7 +26,7 @@ const makeAuthUseCase = () => {
 
 const makeAuthUseCaseWithError = () => {
   class AuthUseCaseSpy {
-    auth() {
+    auth () {
       throw new Error()
     }
   }

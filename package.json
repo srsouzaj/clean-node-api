@@ -1,23 +1,23 @@
 {
-  "name": "clean-node-api",
-  "version": "1.0.0",
-  "description": "Construindo uma API Rest em NodeJS utilizando TDD, Jest, Clean Architecture e Design Pattern.",
-  "author": "Jorge de Souza",
-  "license": "ISC",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:staged": "jest"
-  },
-  "standard": {
-    "env": [
-      "jest"
-    ]
-  },
-  "devDependencies": {
-    "husky": "^4.0.0-beta.5",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.4.3",
-    "standard": "^14.3.1"
-  }
+    "name": "clean-node-api",
+    "version": "1.0.0",
+    "description": "Construindo uma API Rest em NodeJS utilizando TDD, Jest, Clean Architecture e Designs Pattern.",
+    "author": "Jorge de Souza",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test:staged": "jest"
+    },
+    "standard": {
+        "env": [
+            "jest"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^4.0.0-beta.5",
+        "jest": "^24.9.0",
+        "lint-staged": "^9.4.3",
+        "standard": "^14.3.1"
+    }
 }
